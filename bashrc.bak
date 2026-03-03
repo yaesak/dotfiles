@@ -1,0 +1,11 @@
+
+alias loopback="pactl load-module module-loopback"
+alias ls="ls --color=auto"
+alias la="ls -a --color=auto"
+alias ll="ls -l --color=auto"
+alias 120hz="xrandr --output DVI-I-1 --mode 1920x1080 --refresh 120"
+alias zeroconf="pactl load-module module-zeroconf-discover"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source ~/.rvm/scripts/rvm

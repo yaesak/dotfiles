@@ -1,0 +1,32 @@
+window#waybar {
+  	font-family: HackGen35 NF;
+  	font-size: 14px;
+  	min-height: 0px;
+	border-top: 0px;
+	padding: 0;
+	margin: 0;
+  	background-color: rgba(0, 0, 0, 0); /* 100% transparent background */
+}
+
+.modules-center,
+.modules-left,
+.modules-right {
+	  background-color: rgba(255, 255, 255, 0.6); /* White background with 60% opacity */
+	  color: gray; /* Adjust `#有好颜色` to your preferred font color */
+	  padding: 0px 8px; /* Adjust padding if needed */
+	  border-radius: 12px; /* Rounded corners for all modules */
+	  margin-top: 4px; /* Spacing between modules */
+	  margin-right: 8px; /* Spacing between modules */
+	  margin-bottom: 0px; /* Spacing between modules */
+}
+
+#workspaces button{
+	font-size: 8px;
+	color: gray;
+}
+
+#workspaces button.active {
+	color: white; /* 文字色を白に */
+	background-color: #AAAAAA; /* アクティブなワークスペースの背景色をグレーより少し明るい色に */
+    border-radius: 8px; /* 角を少し丸める */
+}

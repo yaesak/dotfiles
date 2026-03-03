@@ -1,0 +1,11 @@
+[window]
+opacity = 0.6
+
+[font]
+normal = {family = "HackGen Console", style = "Regular"}
+bold = {family = "HackGen Console", style = "Bold"}
+italic = {family = "HackGen Console", style = "Italic"}
+bold_italic = {family = "HackGen Console", style = "Bold Italic"}
+size = 12
+offset = { x = 0, y = 2}
+
