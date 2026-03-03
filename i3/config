@@ -5,10 +5,10 @@ set $mod Mod1
 font pango:HackGen Console NF
 workspace_layout default
 for_window [class=".*"] border pixel 1
-gaps inner 16
-gaps outer 4
+gaps inner 24
+gaps outer 16
 gaps top 24
-gaps bottom 0
+#gaps bottom 0
 #hide_edge_borders smart
 #smart_gaps on
 #smart_borders on

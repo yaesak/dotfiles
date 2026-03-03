@@ -31,7 +31,7 @@ alias wineg="~/.local/share/Steam/steamapps/common/Proton\ 8.0/dist/bin/wine"
 alias wchmon="wlr-randr --output DP-1 --on wlr-randr --output eDP-1 --off"
 export EDITOR=nvim
 export PATH="$HOME/.config/myPython/bin:$PATH"
-wal -n -f "$HOME/dotfiles/wal.json"
+#wal -n -f "$HOME/dotfiles/wal.json"
 HISTFILE=~/.zsh_history
 HISTSIZE=2048
 SAVEHIST=2048
@@ -40,4 +40,9 @@ HISTTIMEFORMAT='%F %T '
 #sleep 1; clear
 eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
-sleep 1; clear
+
+# Created by `pipx` on 2026-03-03 13:26:08
+export PATH="$PATH:/home/huetao/.local/bin"
+wal -n -f "$HOME/dotfiles/wal.json"
+
+sleep 2; clear
