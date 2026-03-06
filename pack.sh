@@ -43,7 +43,7 @@ function success() {
 	echo -e "${logo}"
 	
 }
-package='xorg xorg-xinit i3-wm polybar rofi neovim zsh zsh-syntax-highlighting zsh-autosuggestions exa fcitx fcitx-mozc feh papirus-icon-theme starship guake ttf-hackgen brightnessctl greetd alsa-utils xf86-input-synaptic'
+packages='xorg xorg-xinit i3-wm polybar rofi neovim zsh zsh-syntax-highlighting zsh-autosuggestions exa fcitx fcitx-mozc feh papirus-icon-theme starship guake ttf-hackgen brightnessctl greetd alsa-utils xf86-input-synaptic'
 
 
 function symbolic() {
@@ -106,8 +106,12 @@ function aurs() {
 	makepkg -si
 	cd ..
 	rm -rf yay
-	yay -S $package
+	yay -S $packages
 }
+function package() {
+	yay -S $packages
+}
+
 if [ $# -eq 0 ]; then
 	helpmsg
 	exit 1
@@ -121,7 +125,7 @@ while [ -n "$1" ]; do
 			exit 0
 			;;
 		--packages | -p)
-			aurs
+			package
 			exit 0
 			;;
 		--symbolic | -s)
